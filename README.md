@@ -9,7 +9,7 @@ This client uses [SCons](http://scons.org/doc/2.1.0/HTML/scons-user/index.html) 
 
 ## Docker Usage:
 docker build . -t fah-client:fah-client \
-docker run -ti -p 6969:6969 --volume ${PDW}:/work fah-client:fah-client bash \
+docker run -ti --volume ${PDW}:/work fah-client:fah-client bash \
 
 build and run https://github.com/CauldronDevelopmentLLC/cbang.git && scons \
 
