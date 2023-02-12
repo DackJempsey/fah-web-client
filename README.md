@@ -19,3 +19,7 @@ I suppose that the scons dist gets run then the tar file is used somehow in the 
 
 Create a stop for each individual device 
 
+## NOTES: 
+
+This is the web client for v7 \
+v8 client and webclient are the bastet versions
