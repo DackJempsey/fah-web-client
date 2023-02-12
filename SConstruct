@@ -2,16 +2,16 @@ import os
 
 # Setup
 env = Environment(ENV = os.environ)
-try:
-    env.Tool('config', toolpath = [os.environ.get('CBANG_HOME')])
-except Exception as e:
-    raise Exception('CBANG_HOME not set?\n' + str(e))
+# try:
+env.Tool('config', toolpath = [os.environ.get('CBANG_HOME')])
+# except Exception as e:
+#     raise Exception('CBANG_HOME not set?\n' + str(e))
 
-env.CBLoadTools('compiler resources dist cbang fah-client-version')
+env.CBLoadTools('compiler resources dist cbang ') # fah-client-version
 conf = env.CBConfigure()
 
 # Version
-env.FAHClientVersion()
+# env.FAHClientVersion()
 
 # Config vars
 env.Replace(RESOURCES_NS = 'FAH::WebClient')
